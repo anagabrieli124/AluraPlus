@@ -1,48 +1,71 @@
+
+
 :root {
 
-    --branco-principal: #FFFFFF;    
-    --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
-    --cor-de-fundo: #00030C;
+--branco-principal: #FFFFFF;    
+--cinza-secundario: #C0C0C0;
+--botao-azul: #167BF7;
+--cor-de-fundo: #00030C;
+--fonte-principal: Inter;
+/* COPIE AS TAG ABAIXO */
+--botao-azul: #167BF7;
+--botao-azul-efeito:#96b7e0;
+
+
+}
+
+
+body{
+background-color: var(--cor-de-fundo);
+color: var(--branco-principal);
+font-family: var(--fonte-principal);
+font-size: 16px;
+font-weight: 400;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+
+.principal {
+
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
     
-    
-    }
-    
-    
-    body{
-    background-color: var(--cor-de-fundo);
+}
+
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+   }
+
+
+
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    /*   alterado  padding: lem; */
+    padding: 2%;
     color: var(--branco-principal);
-    
-    }
-    
-    * {
-        margin: 0;
-        padding: 0;
-       }
-    
-    .principal {
-    
-        background-image: url("img/Background.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    
-    
-    .container {
-        height: 100vh;
-       }
-    
-    
-    
-    
-    .container__botao {
-        background-color: var(--botao-azul);
-        border-radius: 5px;
-        padding: lem;
-        color: var(--branco-principal);
-        display: block;
-    }
-    .botao_secundario {
+    display: block;
+    text-decoration: none;
+    margin-bottom: none;
+
+}
+
+
+
+.botao_secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
    }
@@ -59,7 +82,7 @@
 }
 
 
-/* FIM DA AULA 4 */
+
 .container__imagem{
     margin: lem 0 2em 0;
 }
@@ -108,4 +131,71 @@ margin-top: 1em;
     padding: 2em;
 
 }
+
+.dispositivos__lista { 
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
     
+}
+
+.dispositivos {
+    text-align: center;
+
+}
+
+.lista__item {
+    font-size: 32px;
+    color:var(--branco-principal);
+
+}
+
+
+/*-------------------------------------------------  Continuação ---------------------------------------------*/
+
+.rodape_lita{
+    diplay;flex;
+    jutify-vontent:center;
+    lit-tyle-type:none;
+    margin-top: 1em;
+}
+
+.lita_limka{
+    text-decoration:none;
+    texte-decoration:none;
+    Color:var(--branco-principal);
+    margin: 0 16px;
+    font-size:14px;
+
+}
+
+.rodape-texto{
+    margin:1em 0;
+    color: var(--cinza-ecundario);
+    font-size: 12px;
+
+}
+
+.rodape{
+    text-aling:center;
+    margin: 5em 3em;
+
+}
+
+.lista_link a:hover{
+    color:var9--botao-azul);
+
+}
+
+.lista_link a:active {
+    color:purple;
+
+}
+
+.container_botao:houver{
+    background-color: var9--botao-azul-efeito);
+    color:var9--cor-de-fundo);
+
+]
